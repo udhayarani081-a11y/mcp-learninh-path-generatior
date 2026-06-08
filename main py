@@ -1,0 +1,16 @@
+import streamlit as st
+
+st.set_page_config(page_title="Learning Path Generator")
+st.title("Learning Path Generator")
+
+goal = st.text_input("Enter your learning goal:", placeholder="I want to learn python in 7 days")
+
+if st.button("Generate Learning Path"):
+    st.subheader("7-Day Python Learning Path for Beginners")
+    st.write("**Day 1:** Introduction to Python, Installation & Basic Syntax")
+    st.write("**Day 2:** Operators and Conditional Statements (if/elif/else)")
+    st.write("**Day 3:** Loops (For & While) and Lists")
+    st.write("**Day 4:** Data Structures (Tuples, Dictionaries, Sets)")
+    st.write("**Day 5:** Functions (Defining, Parameters, Return Values)")
+    st.write("**Day 6:** File Handling and Error Handling (Try-Except)")
+    st.write("**Day 7:** Introduction to Object-Oriented Programming (OOP)")
